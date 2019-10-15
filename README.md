@@ -39,7 +39,7 @@ The Web-Server is now ready to serve incoming requests:
 ### Access the Web Container via SSH
 
 ```bash
-ssh -p1122 www-data@dev.neos-earthquake.docker
+make dev-ssh
 ```
 
 If this fails, check your `GITLAB_USERNAME` ENV var:
