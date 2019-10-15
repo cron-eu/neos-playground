@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="PhpCodeSniffer">
+    <phpcs_settings>
+      <PhpCSConfiguration standards="MySource;PEAR;PHPCS;PHPCompatibility;PSR1;PSR2;Squiz;Zend" tool_path="$USER_HOME$/bin/phpcs.phar" />
+    </phpcs_settings>
+  </component>
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/Packages/Libraries/packagefactory/afx" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/psr/container" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/psr/http-message" />
       <path value="$PROJECT_DIR$/Packages/Libraries/psr/cache" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/psr/log" />
       <path value="$PROJECT_DIR$/Packages/Libraries/psr/simple-cache" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/ramsey/uuid" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-unicode" />
       <path value="$PROJECT_DIR$/Packages/Libraries/neos/flow-log" />
       <path value="$PROJECT_DIR$/Packages/Libraries/behat/transliterator" />
       <path value="$PROJECT_DIR$/Packages/Libraries/neos/cache" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-mediatypes" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-objecthandling" />
       <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-arrays" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-pdo" />
       <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-lock" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-opcodecache" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/neos/composer-plugin" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-files" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/neos/error-messages" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-schema" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/Packages/Libraries/imagine/imagine" />
       <path value="$PROJECT_DIR$/Packages/Libraries/zendframework/zend-code" />
       <path value="$PROJECT_DIR$/Packages/Libraries/zendframework/zend-eventmanager" />
@@ -38,17 +29,10 @@
       <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/inflector" />
       <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/persistence" />
       <path value="$PROJECT_DIR$/Packages/Libraries/typo3fluid/fluid" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/console" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/ocramius/package-versions" />
       <path value="$PROJECT_DIR$/Packages/Libraries/symfony/contracts" />
       <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/orm" />
       <path value="$PROJECT_DIR$/Packages/Libraries/ocramius/proxy-manager" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/dom-crawler" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/yaml" />
       <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/dbal" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/composer" />
       <path value="$PROJECT_DIR$/Packages/Libraries/gedmo/doctrine-extensions" />
       <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/migrations" />
       <path value="$PROJECT_DIR$/Packages/Libraries/myclabs/deep-copy" />
@@ -79,8 +63,29 @@
       <path value="$PROJECT_DIR$/Packages/Libraries/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/Packages/Libraries/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/Packages/Libraries/symfony/css-selector" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/psr/log" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/neos/error-messages" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/psr/http-message" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/psr/container" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/neos/composer-plugin" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-mediatypes" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-files" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-opcodecache" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-schema" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-pdo" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-objecthandling" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-unicode" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/ramsey/uuid" />
       <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/console" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/yaml" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/composer" />
     </include_path>
   </component>
   <component name="PhpUnit">

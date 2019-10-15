@@ -1,21 +1,12 @@
+## Abstract
 
-# Neos.Demo Docker Playground [![CircleCI](https://circleci.com/gh/cron-eu/neos-playground.svg?style=svg)](https://circleci.com/gh/cron-eu/neos-playground)
+This is basically a fork from https://github.com/cron-eu/neos-playground used for internal training purposes.
 
+### Setup your cron Gitlab User correctly
 
-### Github username(s)
+Make sure you have the global ENV var `GITLAB_USERNAME` configured with your
+Github username. The `docker-compose.yml` file will use that.
 
-Make sure you have the global ENV var `GITHUB_USERNAME` configured with your
-Github username. You can also use `.env` for that:
-
-```bash
-echo "GITHUB_USERNAME=MY_GITHUB_USERNAME" > .env
-```
-
-OR
-
-```bash
-export GITHUB_USERNAME=MY_GITHUB_USERNAME
-```
 
 ### Docker Setup
 
@@ -24,7 +15,7 @@ export GITHUB_USERNAME=MY_GITHUB_USERNAME
 Setup a "dev." Hostname for the docker-machine IP Address, in e.g. `/etc/hosts`:
 
 ```
-192.168.99.100 dev.neos-playground.docker
+192.168.99.100 dev.neos-earthquake.docker
 ```
 
 #### Docker Compose UP
@@ -42,11 +33,17 @@ docker-compose logs -f web
 
 The Web-Server is now ready to serve incoming requests:
 
-<http://dev.neos-playground.docker:8080/>
+<http://dev.neos-earthquake.docker:8080/>
 
 
 ### Access the Web Container via SSH
 
 ```bash
-ssh -p1122 www-data@dev.neos-playground.docker
+make dev-ssh
 ```
+
+If this fails, check your `GITLAB_USERNAME` ENV var:
+
+```bash
+echo $GITLAB_USERNAME
+``` 

@@ -81,6 +81,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/zendframework/zend-code" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/zendframework/zend-eventmanager" />
+      <excludeFolder url="file://$MODULE_DIR$/Web/_Resources" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
