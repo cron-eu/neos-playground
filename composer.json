@@ -21,8 +21,8 @@
         "neos/redirecthandler-neosadapter": "~3.0",
         "neos/redirecthandler-databasestorage": "~3.0",
 
-        "neos/setup": "@dev",
-        "cron/behattester": "@dev"
+        "neos/setup": "*",
+        "cron/behattester": "dev-master"
     },
     "require-dev": {
         "neos/buildessentials": "@dev",
