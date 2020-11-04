@@ -7,6 +7,18 @@ This is basically a fork from https://github.com/cron-eu/neos-playground used fo
 Make sure you have the global ENV var `GITLAB_USERNAME` configured with your
 Github username. The `docker-compose.yml` file will use that.
 
+```bash
+echo "GITHUB_USERNAME=MY_GITHUB_USERNAME" >> .env
+# or
+echo "GITLAB_USERNAME=MY_GITLAB_USERNAME" >> .env
+echo "GITLAB_URL=https://gitlab.my-company.org" >> .env
+```
+
+OR
+
+```bash
+export GITHUB_USERNAME=MY_GITHUB_USERNAME
+```
 
 ### Docker Setup
 

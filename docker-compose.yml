@@ -17,9 +17,9 @@ services:
       WWW_PORT: 8081
       SITE_PACKAGE: 'Neos.Demo'
       ADMIN_PASSWORD: 'password'
-      #IMPORT_GITHUB_PUB_KEYS: ${GITHUB_USERNAME}
-      IMPORT_GITLAB_PUB_KEYS: ${GITLAB_USERNAME}
-      GITLAB_URL: https://git.cron.eu
+      IMPORT_GITHUB_PUB_KEYS: ${GITHUB_USERNAME}
+      #IMPORT_GITLAB_PUB_KEYS: ${GITLAB_USERNAME}
+      #GITLAB_URL: ${GITLAB_URL}
       COMPOSER_INSTALL_PARAMS: '--prefer-dist'
   db:
     image: mariadb:10.3
