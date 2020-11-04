@@ -8,7 +8,7 @@ jobs:
       - run:
           name: Run docker-compose up and check if the web-server renders the homepage correctly
           command: |
-            docker-compose run --rm --service-ports web bash -c "sleep 2 ; curl -s http://localhost:8080/ | grep 'powered by Neos'"
+            docker-compose run --rm --service-ports web bash -c "sleep 2 ; curl -s http://localhost:8081/ | grep 'powered by Neos'"
 
   run-behat:
     machine:
