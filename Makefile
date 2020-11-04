@@ -11,10 +11,10 @@ DEV_WWW = www
 
 # Syncs only relevant runtime files to docker. Use with ARGS=-n for dry run
 docker-sync: scp-rsync-filter
-	rsync $(ARGS) -O --filter='dir-merge /.rsync-filter-dev' --delete -c -av --exclude .git -e "ssh -p 1122" . $(DEV_USER)@$(DOCKER_IP):$(DEV_WWW)/
+	rsync $(ARGS) -O --filter='dir-merge /.rsync-filter-dev' --delete -c -av --exclude .git -e "ssh -p 1123" . $(DEV_USER)@$(DOCKER_IP):$(DEV_WWW)/
 
 scp-rsync-filter:
-	scp -q -P 1122 .rsync-filter $(DEV_USER)@$(DOCKER_IP):$(DEV_WWW)/
+	scp -q -P 1123 .rsync-filter $(DEV_USER)@$(DOCKER_IP):$(DEV_WWW)/
 
 dev-ssh:
-	ssh -A -p 1122 $(DEV_USER)@$(DOCKER_IP)
+	ssh -A -p 1123 $(DEV_USER)@$(DOCKER_IP)

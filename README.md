@@ -15,7 +15,7 @@ Github username. The `docker-compose.yml` file will use that.
 Setup a "dev." Hostname for the docker-machine IP Address, in e.g. `/etc/hosts`:
 
 ```
-192.168.99.100 dev.neos-earthquake.docker
+192.168.99.100 dev.neos-playground.docker
 ```
 
 #### Docker Compose UP
@@ -33,7 +33,7 @@ docker-compose logs -f web
 
 The Web-Server is now ready to serve incoming requests:
 
-<http://dev.neos-earthquake.docker:8080/>
+<http://dev.neos-playground.docker:8081/>
 
 
 ### Access the Web Container via SSH
