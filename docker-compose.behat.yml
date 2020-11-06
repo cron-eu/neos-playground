@@ -3,7 +3,7 @@ version: '3.1'
 services:
   web:
     # use the neos-alpine behat image instead of the default one
-    image: croneu/neos-behat:latest
+    image: croneu/neos:7.3-behat
     hostname: behat-runner
     ports:
       - '5900:5900'

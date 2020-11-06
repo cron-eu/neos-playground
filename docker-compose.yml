@@ -3,7 +3,7 @@ version: '3.1'
 
 services:
   web:
-    image: croneu/neos
+    image: croneu/neos:7.3
     hostname: neos-playground
     ports:
     - '8081:8081'
