@@ -1,6 +1,6 @@
 {
-    "name": "cron/neos-earthquake",
-    "description": "Neos base distribution for 'Earthquake' training",
+    "name": "cron/neos-playground",
+    "description": "Neos base distribution",
     "license": "GPL-3.0+",
     "config": {
         "vendor-dir": "Packages/Libraries",
