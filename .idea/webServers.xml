@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="ac9aef4b-9800-49c8-8692-afe638bf95e7" name="neos-playground-docker" url="http://dev.neos-earthquake.docker">
-        <fileTransfer rootFolder="/data/" accessType="SFTP" host="dev.neos-playground.docker" port="1123" sshConfigId="e5c70263-bc20-4cc5-9a91-bcac8043ac8a" sshConfig="neos-playground-docker" authAgent="true">
+        <fileTransfer rootFolder="/data/" accessType="SFTP" host="dev.neos-playground.docker" port="1123" sshConfigId="e5c70263-bc20-4cc5-9a91-bcac8043ac8a" sshConfig="www-data@dev.neos-playground.docker:1123 agent" authAgent="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
