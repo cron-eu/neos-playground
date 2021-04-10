@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9a5eb9775cfa3a503f941d8421cab2e",
+    "content-hash": "d616ed62652087c8de1bbb8f9733e7c9",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1990,17 +1990,11 @@
         },
         {
             "name": "flowpack/elasticsearch-contentrepositoryadaptor",
-            "version": "8.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Flowpack/Flowpack.ElasticSearch.ContentRepositoryAdaptor.git",
+                "url": "https://github.com/cron-eu/Flowpack.ElasticSearch.ContentRepositoryAdaptor.git",
                 "reference": "e0f84089a1ede9558699ae2cd3f8901069fcf667"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Flowpack/Flowpack.ElasticSearch.ContentRepositoryAdaptor/zipball/e0f84089a1ede9558699ae2cd3f8901069fcf667",
-                "reference": "e0f84089a1ede9558699ae2cd3f8901069fcf667",
-                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -2013,6 +2007,7 @@
                 "neos/utility-arrays": "^7.0",
                 "php": "^7.3"
             },
+            "default-branch": true,
             "type": "neos-package",
             "extra": {
                 "applied-flow-migrations": [
@@ -2095,16 +2090,11 @@
                     "Flowpack\\ElasticSearch\\ContentRepositoryAdaptor\\": "Classes"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0-only"
             ],
             "description": "This package provides functionality for using Elasticsearch on top of Neos.ContentRepository.Search",
             "homepage": "http://flowpack.org/",
-            "support": {
-                "issues": "https://github.com/Flowpack/Flowpack.ElasticSearch.ContentRepositoryAdaptor/issues",
-                "source": "https://github.com/Flowpack/Flowpack.ElasticSearch.ContentRepositoryAdaptor/tree/8.0.5"
-            },
             "time": "2021-03-08T10:43:07+00:00"
         },
         {
@@ -11350,10 +11340,18 @@
             "time": "2021-03-09T10:59:23+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "flowpack/elasticsearch-contentrepositoryadaptor",
+            "version": "9999999-dev",
+            "alias": "8.0.5",
+            "alias_normalized": "8.0.5.0"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "cron/behattester": 20
+        "cron/behattester": 20,
+        "flowpack/elasticsearch-contentrepositoryadaptor": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

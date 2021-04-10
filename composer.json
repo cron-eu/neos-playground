@@ -28,7 +28,7 @@
         "neos/setup": "^5.0",
         "neos/neos-setup": "^1.1",
         "cron/behattester": "dev-master",
-        "flowpack/elasticsearch-contentrepositoryadaptor": "^8.0"
+        "flowpack/elasticsearch-contentrepositoryadaptor": "dev-master as 8.0.5"
     },
     "require-dev": {
         "neos/buildessentials": "^7.0",
@@ -38,6 +38,10 @@
         "neos/behat": "^6.1"
     },
     "repositories": {
+        "flowpack-cr-adapter": {
+            "type": "git",
+            "url": "https://github.com/cron-eu/Flowpack.ElasticSearch.ContentRepositoryAdaptor.git"
+        },
         "distributionPackages": {
             "type": "path",
             "url": "./DistributionPackages/*"
