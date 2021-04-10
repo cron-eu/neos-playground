@@ -7,6 +7,9 @@ jobs:
     name: Build and Test
     runs-on: ubuntu-latest
 
+    env:
+        COMPOSER_VERSION: 2
+
     steps:
       -
         uses: actions/checkout@v2
