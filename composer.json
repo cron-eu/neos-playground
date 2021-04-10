@@ -26,7 +26,8 @@
         "neos/redirecthandler-databasestorage": "^5.0",
         "neos/redirecthandler-ui": "^2.4",
         "neos/setup": "^5.0",
-        "neos/neos-setup": "^1.1"
+        "neos/neos-setup": "^1.1",
+        "cron/behattester": "dev-master"
     },
     "require-dev": {
         "neos/buildessentials": "^7.0",
