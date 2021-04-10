@@ -33,5 +33,15 @@ services:
       MYSQL_PASSWORD: 'pass'
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
 
+  elasticsearch:
+      image: elasticsearch:7.12.0
+      ports:
+          - 9200
+          - 9300
+      environment:
+          - "ES_JAVA_OPTS=-Xms256m -Xmx256m"
+          - xpack.security.enabled=false
+          - discovery.type=single-node
+
 volumes:
   data:
