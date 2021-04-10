@@ -8,10 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-        COMPOSER_VERSION: 2
+      COMPOSER_VERSION: 2
 
     steps:
       - uses: actions/checkout@v2
+
+      - uses: nanasess/setup-php@master
+        with:
+          php-version: '7.3'
 
       - name: Configure Composer (get version and path)
         id: composer-config
