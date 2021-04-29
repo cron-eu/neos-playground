@@ -14,10 +14,7 @@
       <path value="$PROJECT_DIR$/Packages/Libraries/behat/transliterator" />
       <path value="$PROJECT_DIR$/Packages/Libraries/neos/cache" />
       <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-arrays" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-lock" />
       <path value="$PROJECT_DIR$/Packages/Libraries/imagine/imagine" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/zendframework/zend-code" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/zendframework/zend-eventmanager" />
       <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/cache" />
       <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/reflection" />
       <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/event-manager" />
@@ -31,7 +28,6 @@
       <path value="$PROJECT_DIR$/Packages/Libraries/typo3fluid/fluid" />
       <path value="$PROJECT_DIR$/Packages/Libraries/symfony/contracts" />
       <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/orm" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/ocramius/proxy-manager" />
       <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/dbal" />
       <path value="$PROJECT_DIR$/Packages/Libraries/gedmo/doctrine-extensions" />
       <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/migrations" />
@@ -43,7 +39,6 @@
       <path value="$PROJECT_DIR$/Packages/Libraries/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/Packages/Libraries/phpunit/php-file-iterator" />
       <path value="$PROJECT_DIR$/Packages/Libraries/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/phpunit/php-token-stream" />
       <path value="$PROJECT_DIR$/Packages/Libraries/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/Packages/Libraries/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/Packages/Libraries/sebastian/global-state" />
@@ -78,19 +73,53 @@
       <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/Packages/Libraries/symfony/dom-crawler" />
       <path value="$PROJECT_DIR$/Packages/Libraries/ramsey/uuid" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/Packages/Libraries/symfony/console" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/Packages/Libraries/symfony/yaml" />
       <path value="$PROJECT_DIR$/Packages/Libraries/symfony/service-contracts" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/ocramius/package-versions" />
-      <path value="$PROJECT_DIR$/Packages/Libraries/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/Packages/Libraries/composer" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/finder" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/process" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/string" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/brick/math" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/friendsofphp/proxy-manager-lts" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/react/promise" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/psr/http-factory" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/ramsey/collection" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/league/csv" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/sebastian/type" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/sebastian/code-unit" />
     </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
-      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/Packages/Libraries/autoload.php" />
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/Packages/Libraries/autoload.php" />
     </phpunit_settings>
   </component>
 </project>
