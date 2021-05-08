@@ -112,6 +112,18 @@
       <path value="$PROJECT_DIR$/Packages/Libraries/sebastian/lines-of-code" />
       <path value="$PROJECT_DIR$/Packages/Libraries/sebastian/type" />
       <path value="$PROJECT_DIR$/Packages/Libraries/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/neos/utility-lock" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/psr/http-client" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/Packages/Libraries/guzzlehttp/guzzle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0">

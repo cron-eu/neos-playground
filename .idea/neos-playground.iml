@@ -101,6 +101,9 @@
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/sebastian/lines-of-code" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/sebastian/type" />
       <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/Packages/Libraries/guzzlehttp/guzzle" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
