@@ -26,6 +26,7 @@ services:
         volumes:
             - app:/app
             - ./scripts:/scripts
+            - ./app/DistributionPackages:/app/DistributionPackages
 
     mysql:
         image: croneu/phpapp-db:mariadb-10.7
