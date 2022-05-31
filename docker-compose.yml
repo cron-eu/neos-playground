@@ -19,7 +19,7 @@ services:
                     - example-app.vm
 
     php:
-        image: croneu/phpapp-fpm:php-8
+        image: croneu/phpapp-fpm:php-8.1
         env_file:
             - '.env.docker'
             - '.env'
