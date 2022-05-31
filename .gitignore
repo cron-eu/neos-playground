@@ -40,3 +40,6 @@ deploy_rsa.pub
 .env
 behat.yml
 /.idea/dictionaries/
+/app/.gitignore
+/app/.editorconfig
+/app/composer.lock

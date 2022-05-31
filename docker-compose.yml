@@ -9,7 +9,7 @@ services:
             - "8000:80"
             - "8443:443"
         volumes:
-            - app:/app
+            - ./app:/app
         env_file:
             - '.env.docker'
             - '.env'
@@ -24,9 +24,10 @@ services:
             - '.env.docker'
             - '.env'
         volumes:
-            - app:/app
+            - ./app:/app
             - ./scripts:/scripts
-            - ./app/DistributionPackages:/app/DistributionPackages
+            - data:/app/Data
+            - packages:/app/Packages
 
     mysql:
         image: croneu/phpapp-db:mariadb-10.7
@@ -41,5 +42,6 @@ services:
             MARIADB_PASSWORD: ${DB_PASS}
 
 volumes:
-    app:
+    data:
+    packages:
     mysql:
