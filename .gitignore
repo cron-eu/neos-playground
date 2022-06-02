@@ -37,7 +37,6 @@ Build/Resources/Java/selenium-server-standalone*
 /"
 deploy_rsa
 deploy_rsa.pub
-.env
 behat.yml
 /.idea/dictionaries/
 /app/.gitignore
