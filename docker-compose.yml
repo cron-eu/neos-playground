@@ -12,6 +12,7 @@ services:
             - ./app:/app
             # apache needs access to the files under the _Resources folder
             - data:/app/Data
+            - packages:/app/Packages
         env_file:
             - '.env.docker'
             - '.env'
