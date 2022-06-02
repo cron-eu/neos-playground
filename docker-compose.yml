@@ -10,6 +10,8 @@ services:
             - "4443:443"
         volumes:
             - ./app:/app
+            # apache needs access to the files under the _Resources folder
+            - data:/app/Data
         env_file:
             - '.env.docker'
             - '.env'
