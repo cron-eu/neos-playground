@@ -1,7 +1,8 @@
 {
     "name": "neos/neos-base-distribution",
+    "type": "project",
     "description": "Neos Base Distribution",
-    "license": "GPL-3.0+",
+    "license": "GPL-3.0-or-later",
     "support": {
         "email": "hello@neos.io",
         "slack": "http://slack.neos.io/",
@@ -13,28 +14,32 @@
     },
     "config": {
         "vendor-dir": "Packages/Libraries",
-        "bin-dir": "bin"
+        "bin-dir": "bin",
+        "allow-plugins": {
+            "neos/composer-plugin": true
+        }
     },
     "require": {
-        "neos/neos": "~7.0.0",
-        "neos/site-kickstarter": "~7.0.0",
+        "neos/neos": "~8.0.0",
+        "neos/site-kickstarter": "~8.0.0",
 
-        "neos/demo": "^7.0",
-        "neos/neos-ui": "^7.0",
-        "neos/seo": "^3.0",
-        "neos/redirecthandler-neosadapter": "^4.3",
-        "neos/redirecthandler-databasestorage": "^5.0",
-        "neos/redirecthandler-ui": "^2.4",
-        "neos/setup": "^5.0",
-        "neos/neos-setup": "^1.1",
-        "cron/behattester": "dev-master"
+        "neos/demo": "^8.0",
+        "neos/neos-ui": "~8.0.0",
+        "neos/seo": "~3.0",
+        "neos/redirecthandler-neosadapter": "~4.2",
+        "neos/redirecthandler-databasestorage": "~5.0",
+        "neos/redirecthandler-ui": "~2.4",
+
+        "neos/cli-setup": "~8.0.0",
+        "neos/setup": "@dev",
+        "neos/neos-setup": "@dev"
     },
     "require-dev": {
-        "neos/buildessentials": "^7.0",
+        "neos/buildessentials": "~8.0.0",
         "mikey179/vfsstream": "^1.6",
         "phpunit/phpunit": "^9.0",
-        "symfony/css-selector": "^2.0",
-        "neos/behat": "^6.1"
+        "symfony/css-selector": "~2.0",
+        "neos/behat": "~8.0.0"
     },
     "repositories": {
         "distributionPackages": {
@@ -43,12 +48,17 @@
         }
     },
     "replace": {
-        "neos/neos-base-distribution": "7.0.1"
+        "typo3/neos-base-distribution": "8.0.3"
     },
     "suggest": {
         "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"
     },
+    "allow-plugins": {
+        "neos/composer-plugin": true,
+        "composer/package-versions-deprecated": true
+    },
     "scripts": {
+        "post-create-project-cmd": "./flow welcome",
         "post-update-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
         "post-install-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
         "post-package-update": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",

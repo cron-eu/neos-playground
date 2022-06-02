@@ -1,61 +1,38 @@
 ## Abstract
 
-This is basically a fork from https://github.com/cron-eu/neos-playground used for internal training purposes.
+A simple docker based Neos Setup for development and testing.
 
-### Setup your cron Gitlab User correctly
+### Use docker-phpapp Docker Image
 
-Make sure you have the global ENV var `GITLAB_USERNAME` configured with your
-Github username. The `docker-compose.yml` file will use that.
-
-```bash
-echo "GITHUB_USERNAME=MY_GITHUB_USERNAME" >> .env
-# or
-echo "GITLAB_USERNAME=MY_GITLAB_USERNAME" >> .env
-echo "GITLAB_URL=https://gitlab.my-company.org" >> .env
-```
-
-OR
-
-```bash
-export GITHUB_USERNAME=MY_GITHUB_USERNAME
-```
-
-### Docker Setup
-
-#### .dev Hostname
-
-Setup a "dev." Hostname for the docker-machine IP Address, in e.g. `/etc/hosts`:
-
-```
-192.168.99.100 dev.neos-playground.docker
-```
+See https://github.com/cron-eu/docker-phpapp-php for details.
 
 #### Docker Compose UP
 
-```bash
-docker-compose up -d
-docker-compose logs -f web
+```shell
+docker compose up -d
 ```
 
-.. wait 'till you see the line:
+#### Setup a new Neos Environment
 
+```shell
+docker compose exec -u application php bash
 ```
-.. NOTICE: ready to handle connections
-```
 
-The Web-Server is now ready to serve incoming requests:
-
-<http://dev.neos-playground.docker:8081/>
-
-
-### Access the Web Container via SSH
+Then, inside the new shell, do:
 
 ```bash
-make dev-ssh
+/scripts/setup-neos-demo.sh
 ```
 
-If this fails, check your `GITLAB_USERNAME` ENV var:
+Then, access the Neos Demo Site here: http://localhost:4000/ (when using Docker for Mac).
 
-```bash
-echo $GITLAB_USERNAME
-``` 
+#### phpStorm Development
+
+Do a composer install locally to allow phpStorm to index the Packages Folder and related files:
+
+On the local machine, do:
+
+```shell
+cd app
+composer i
+```

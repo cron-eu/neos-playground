@@ -1,37 +1,50 @@
----
-version: '3.1'
+version: '3.7'
+
+# Example docker-compose using the images we build here
 
 services:
-  web:
-    image: croneu/neos:7.3
-    hostname: neos-playground
-    ports:
-    - '8081:8081'
-    - '1123:22'
-    links:
-    - db
-    volumes:
-    - data:/data
-    - .:/src
-    environment:
-      WWW_PORT: 8081
-      SITE_PACKAGE: 'Neos.Demo'
-      ADMIN_PASSWORD: 'password'
-      IMPORT_GITHUB_PUB_KEYS: ${GITHUB_USERNAME}
-      #IMPORT_GITLAB_PUB_KEYS: ${GITLAB_USERNAME}
-      #GITLAB_URL: ${GITLAB_URL}
-      COMPOSER_INSTALL_PARAMS: '--prefer-dist'
-  db:
-    image: mariadb:10.3
-    expose:
-    - 3306
-    volumes:
-    - /var/lib/data
-    environment:
-      MYSQL_DATABASE: 'db'
-      MYSQL_USER: 'admin'
-      MYSQL_PASSWORD: 'pass'
-      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+    web:
+        image: croneu/phpapp-web:apache-2.4
+        ports:
+            - "4000:80"
+            - "4443:443"
+        volumes:
+            - ./app:/app
+            # apache needs access to the files under the _Resources folder
+            - data:/app/Data
+            - packages:/app/Packages
+        env_file:
+            - '.env.docker'
+            - '.env'
+        networks:
+            default:
+                aliases:
+                    - example-app.vm
+
+    php:
+        image: croneu/phpapp-fpm:php-8.1
+        env_file:
+            - '.env.docker'
+            - '.env'
+        volumes:
+            - ./app:/app
+            - ./scripts:/scripts
+            - data:/app/Data
+            - packages:/app/Packages
+
+    mysql:
+        image: croneu/phpapp-db:mariadb-10.7
+#        ports:
+#            - 13306:3306
+        volumes:
+            - mysql:/var/lib/mysql
+        environment:
+            MARIADB_ROOT_PASSWORD: ${DB_PASS}
+            MARIADB_DATABASE: ${DB_NAME}
+            MARIADB_USER: ${DB_USER}
+            MARIADB_PASSWORD: ${DB_PASS}
 
 volumes:
-  data:
+    data:
+    packages:
+    mysql:

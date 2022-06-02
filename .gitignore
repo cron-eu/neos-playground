@@ -20,7 +20,7 @@
 /Build/BuildEssentials
 /Build/Reports
 /Build/Resources
-/Configuration/
+/app/Configuration/
 /Data/
 /Packages/
 /Web/
@@ -37,6 +37,8 @@ Build/Resources/Java/selenium-server-standalone*
 /"
 deploy_rsa
 deploy_rsa.pub
-.env
 behat.yml
 /.idea/dictionaries/
+/app/.gitignore
+/app/.editorconfig
+/app/composer.lock
