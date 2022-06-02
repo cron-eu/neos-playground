@@ -6,8 +6,8 @@ services:
     web:
         image: croneu/phpapp-web:apache-2.4
         ports:
-            - "8000:80"
-            - "8443:443"
+            - "4000:80"
+            - "4443:443"
         volumes:
             - ./app:/app
         env_file:
@@ -31,8 +31,8 @@ services:
 
     mysql:
         image: croneu/phpapp-db:mariadb-10.7
-        ports:
-            - 13306:3306
+#        ports:
+#            - 13306:3306
         volumes:
             - mysql:/var/lib/mysql
         environment:

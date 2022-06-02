@@ -24,7 +24,7 @@ Then, inside the new shell, do:
 /scripts/setup-neos-demo.sh
 ```
 
-Then, access the Neos Demo Site here: http://localhost:8000/ (when using Docker for Mac).
+Then, access the Neos Demo Site here: http://localhost:4000/ (when using Docker for Mac).
 
 #### phpStorm Development
 
