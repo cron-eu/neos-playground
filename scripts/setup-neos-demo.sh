@@ -17,4 +17,4 @@ $composer require neos/demo && ./flow flow:package:rescan
 ./flow site:import Neos.Demo
 
 # done
-echo "Neos Demosite ready to go, go to http://localhost:8000/"
+echo "Neos Demosite ready to go, go to http://localhost:4000/"
